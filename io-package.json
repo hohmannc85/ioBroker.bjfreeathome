@@ -1,0 +1,96 @@
+{
+    "common": {
+        "name": "bjfreeathome",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "free@home API3.0",
+        "titleLang": {
+            "en": "free@home API3.0",
+            "de": "free@home-API3.0",
+            "ru": "бесплатный@домашний API3.0",
+            "pt": "free@home API3.0",
+            "nl": "free@home API3.0",
+            "fr": "libre@home API3.0",
+            "it": "gratis@casa API3.0",
+            "es": "free@home API3.0",
+            "pl": "free@home API3.0",
+            "zh-cn": "free@home API3.0"
+        },
+        "desc": {
+            "en": "New simple adapter for Busch Jäger",
+            "de": "Neuer einfacher Adapter für Busch Jäger",
+            "ru": "Новый простой адаптер для Busch Jäger",
+            "pt": "Novo adaptador simples para Busch Jäger",
+            "nl": "Nieuwe eenvoudige adapter voor Busch Jäger",
+            "fr": "Nouvel adaptateur simple pour Busch Jäger",
+            "it": "Nuovo semplice adattatore per Busch Jäger",
+            "es": "Nuevo adaptador simple para Busch Jäger",
+            "pl": "Nowy prosty adapter do Busch Jäger",
+            "zh-cn": "用于 Busch Jäger 的新型简单适配器"
+        },
+        "authors": [
+            "Christian Hohmann <hohmannc@gmx.net>"
+        ],
+        "keywords": [
+            "freeathome Busch jäger"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "bjfreeathome.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/ChristianHohmann/ioBroker.bjfreeathome/master/admin/bjfreeathome.png",
+        "readme": "https://github.com/ChristianHohmann/ioBroker.bjfreeathome/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "iot-systems",
+        "compact": true,
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=1.4.2"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
