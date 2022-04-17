@@ -15,7 +15,14 @@
 
     <!-- Load our own files -->
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="words.js"></script>
+    <style type="text/css">
+    .sub-title {            margin-top: 2rem!important;
+            padding: 0.5rem;
+            background: #64b5f6;
+            color: white;
+}
+    </style>
+<script type="text/javascript" src="words.js"></script>
 
     <script type="text/javascript">
         // This will be called by the admin adapter when the settings page loads
@@ -75,19 +82,38 @@
 
         <!-- For example columns with settings: -->
         <div class="row">
-            <div class="col s6 input-field">
-                <input type="checkbox" class="value" id="option1" />
-                <label for="option1" class="translate">option1</label>
-            </div>
+              <h6 class="translate sub-title">Authentication settings</h6>
+		</div>
 
-            <div class="col s6 input-field">
-                <input type="text" class="value" id="option2" />
-                <label for="option2" class="translate">option2</label>
+				<div class="col s6 l3 input-field">
+                  <input type="text" class="value" id="username" size="40" />
+                  <label for="username" class="translate">API username</label>
+                  <br>
+                </div>
+                <div class="col s6 l3 input-field">
+                  <input type="password" class="value" id="password" size="40" />
+                  <label for="password" class="translate">Password</label>
+                </div>
+           
+			<div class="row">
+              <h6 class="translate sub-title">Other settings</h6>
+				<table width="100%" border="0" cellspacing="1.5">
+  <tbody>
+    <tr>
+      <td><input class="value"  type="text" value="0.0.0.0" id="serverip"/>
+              <label for="serverip" class="translate">IP Adress of SysAP</label></td>
+      <td><input type="number" class="value" id="pollingInterval" max="5" min="1"/>
+                  <label for="pollingInterval" class="translate">Polling interval (min)</label></td>
+    </tr>
+  </tbody>
+</table>
+		
+				 
+                  
+             
+                  
             </div>
-        </div>
-
     </div>
-
 </body>
 
 </html>

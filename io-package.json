@@ -66,8 +66,10 @@
         ]
     },
     "native": {
-        "option1": true,
-        "option2": "42"
+     "username": "",
+     "password": "",
+     "serverip": "0.0.0.0",
+    "pollingInterval": 1
     },
     "objects": [],
     "instanceObjects": [
