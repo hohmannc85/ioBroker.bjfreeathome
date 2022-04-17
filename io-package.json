@@ -16,18 +16,18 @@
                 "zh-cn": "首次出版"
             }
         },
-        "title": "free@home API3.0",
+        "title": "Buch-Jäger free@home API3.0",
         "titleLang": {
-            "en": "free@home API3.0",
-            "de": "free@home-API3.0",
-            "ru": "бесплатный@домашний API3.0",
-            "pt": "free@home API3.0",
-            "nl": "free@home API3.0",
-            "fr": "libre@home API3.0",
-            "it": "gratis@casa API3.0",
-            "es": "free@home API3.0",
-            "pl": "free@home API3.0",
-            "zh-cn": "free@home API3.0"
+            "en": "Buch-Jäger free@home API3.0",
+            "de": "Buch-Jäger free@home-API3.0",
+            "ru": "Buch-Jäger бесплатный@домашний API3.0",
+            "pt": "Buch-Jäger free@home API3.0",
+            "nl": "Buch-Jäger free@home API3.0",
+            "fr": "Buch-Jäger libre@home API3.0",
+            "it": "Buch-Jäger gratis@casa API3.0",
+            "es": "Buch-Jäger free@home API3.0",
+            "pl": "Buch-Jäger free@home API3.0",
+            "zh-cn": "Buch-Jäger free@home API3.0"
         },
         "desc": {
             "en": "New simple adapter for Busch Jäger",
@@ -52,7 +52,7 @@
         "main": "main.js",
         "icon": "bjfreeathome.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/ChristianHohmann/ioBroker.bjfreeathome/master/admin/bjfreeathome.png",
+        "extIcon": "https://raw.githubusercontent.com/ChristianHohman/ioBroker.bjfreeathome/master/admin/bjfreeathome.png",
         "readme": "https://github.com/ChristianHohmann/ioBroker.bjfreeathome/blob/master/README.md",
         "loglevel": "info",
         "mode": "daemon",
