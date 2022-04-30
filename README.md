@@ -5,8 +5,8 @@
 [![Downloads](https://img.shields.io/npm/dm/iobroker.bjfreeathome.svg)](https://www.npmjs.com/package/iobroker.bjfreeathome)
 ![Number of Installations (latest)](http://iobroker.live/badges/bjfreeathome-installed.svg)
 ![Number of Installations (stable)](http://iobroker.live/badges/bjfreeathome-stable.svg)
-[![Dependency Status](https://img.shields.io/david/ChristianHohmann/iobroker.bjfreeathome.svg)](https://david-dm.org/ChristianHohmann/iobroker.bjfreeathome)
-[![Known Vulnerabilities](https://snyk.io/test/github/ChristianHohmann/ioBroker.bjfreeathome/badge.svg)](https://snyk.io/test/github/ChristianHohmann/ioBroker.bjfreeathome)
+[![Dependency Status](https://img.shields.io/david/hohmannc85/iobroker.bjfreeathome.svg)](https://david-dm.org/hohmannc85/iobroker.bjfreeathome)
+[![Known Vulnerabilities](https://snyk.io/test/github/hohmannc85/ioBroker.bjfreeathome/badge.svg)](https://snyk.io/test/github/hohmannc85/ioBroker.bjfreeathome)
 
 [![NPM](https://nodei.co/npm/iobroker.bjfreeathome.png?downloads=true)](https://nodei.co/npm/iobroker.bjfreeathome/)
 
