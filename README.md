@@ -19,9 +19,9 @@ This is a new adapter for Busch Jaeger System - free@home which supports the old
 
 Please use the "adapter list" in ioBroker to install a stable version of this adapter. You can also install this adapter by bash:
 
-    ```bash
+   
     iobroker add bjfreeathome
-    ```
+
 
 ## Changelog
 
