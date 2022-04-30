@@ -1,19 +1,19 @@
 {
   "name": "iobroker.bjfreeathome",
-  "version": "0.0.1",
-  "description": "New simple adapter for Busch Jäger",
+  "version": "0.1.0",
+  "description": "a new adapter for Busch Jaeger supporting API >3.0",
   "author": {
     "name": "Christian Hohmann",
     "email": "hohmannc@gmx.net"
   },
-  "homepage": "https://github.com/ChristianHohmann/ioBroker.bjfreeathome",
+  "homepage": "https://github.com/hohmannc85/ioBroker.bjfreeathome",
   "license": "MIT",
   "keywords": [
     "freeathome Busch jäger"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:ChristianHohmann/ioBroker.bjfreeathome.git"
+    "url": "git@github.com:hohmannc85/ioBroker.bjfreeathome.git"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^2.6.0"
@@ -48,7 +48,7 @@
     "lint": "eslint"
   },
   "bugs": {
-    "url": "https://github.com/ChristianHohmann/ioBroker.bjfreeathome/issues"
+    "url": "https://github.com/hohmannc85/ioBroker.bjfreeathome/issues"
   },
   "readmeFilename": "README.md"
 }
