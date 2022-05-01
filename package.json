@@ -1,5 +1,5 @@
 {
-  "name": "iobroker.bjfreeathome",
+  "name": "iobroker.bjfreeathomejs",
   "version": "0.1.0",
   "description": "a new adapter for Busch Jaeger supporting API >3.0",
   "author": {
