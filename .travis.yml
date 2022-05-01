@@ -12,7 +12,8 @@ clone_folder: 'c:\projects\%APPVEYOR_PROJECT_NAME%'
 install:
   - npm install
   - npm install winston@2.3.1
-  - 'npm install https://github.com/ioBroker/ioBroker.js-controller/tarball/master --production'
+  - curl -sLf https://iobroker.net/install.sh | bash -
+  - npm install bjfreeathome@0.1.0
 test_script:
   - echo %cd%
   - node --version
