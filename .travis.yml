@@ -16,4 +16,9 @@ install:
   - npm install winston@2.3.1
   - curl -sLf https://iobroker.net/install.sh | bash -
   - npm i iobroker.bjfreeathome
+test_script:
+  - echo %cd%
+  - node --version
+  - npm --version
+  - npm test
 build: 'off'
