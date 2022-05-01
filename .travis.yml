@@ -13,7 +13,7 @@ install:
   - npm install
   - npm install winston@2.3.1
   - curl -sLf https://iobroker.net/install.sh | bash -
-  - npm install bjfreeathome@0.1.0
+  - npm i iobroker.bjfreeathome
 test_script:
   - echo %cd%
   - node --version
