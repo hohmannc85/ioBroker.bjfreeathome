@@ -346,8 +346,8 @@ sendDevicestate(deviceid,devicestate) {
                                                                                       '.'+ JSON.stringify(key_sub5);
                                                                                         
                                                                                         otherstates = otherstates.replace(/["]/g, "");
-                                                                                    
-                                                                                        this.Dataset(otherstates, obj_sub5.replace(/["]/g, ""));  
+                                                                                        this.Dataset(otherstates, obj_sub5.value);  
+                                                                                        //this.Dataset(otherstates, obj_sub5.replace(/["]/g, ""));  
                                                                                                                                      
                                                                                                                                  }
                                                                                                                                      
