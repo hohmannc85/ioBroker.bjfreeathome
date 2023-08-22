@@ -22,6 +22,13 @@ Please install this adapter via GitHub link in iobroker.
 
 ## Changelog
 
+### 0.1.2
+* (Christian Hohmann) auto-reconnect, since sysAP closes Websocket connection after 1 Minute. hell knows why...
+
+### 0.1.1
+* (Christian Hohmann) Changing replace issue
+
+  
 ### 0.1.0
 * (Christian Hohmann) initial release
 
