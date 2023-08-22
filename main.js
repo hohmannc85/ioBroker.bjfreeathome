@@ -207,7 +207,7 @@ async Dataset(datenpunkt,inhalt)
 
             this.setState("info.connection", false, true);
             this.log.info("Websocket closed");
-        });    
+            this.connectWS();       });    
        
         
         this.ws.on("message", async (data) => {  
