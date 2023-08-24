@@ -12,7 +12,7 @@
 
 ## bjfreeathome adapter for ioBroker
 
-This is a new adapter for Busch Jaeger System - free@home which supports the old API as well as Version >3.0. 
+This is a new adapter for Busch Jaeger System - free@home which supports the old API as well as Version >3.0. SysAP2 - local Api!
 
 
 ### Installation
