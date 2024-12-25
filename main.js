@@ -192,7 +192,13 @@ async Dataset(datenpunkt,inhalt)
         this.ws.on("open", () => {
             this.log.info("WebSocket connected");
             this.setState("info.connection", true, true);
-            this.loadDevices() 
+            this.loadDevices();
+            this.pingInterval = setInterval(() => {
+                if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+                    this.ws.send("ping"); // Falls der Server ein anderes Protokoll nutzt, passe "ping" an.
+                    this.log.debug("Ping gesendet");
+                     }
+                  }, 30000); // Alle 30 Sekunden
 
             
         });
@@ -204,7 +210,7 @@ async Dataset(datenpunkt,inhalt)
         });
         this.ws.on("close", (data) => {
             this.log.debug(data);
-
+            clearInterval(this.pingInterval);
             this.setState("info.connection", false, true);
             this.log.info("Websocket closed");
             this.connectWS();       });    
