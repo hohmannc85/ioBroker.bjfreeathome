@@ -21,6 +21,8 @@ Please install this adapter via GitHub link in iobroker.
 
 
 ## Changelog
+### 0.1.2
+* (Christian Hohmann) Websocket Reconnect fixed by adding ping every 30 seconds 
 
 ### 0.1.2
 * (Christian Hohmann) auto-reconnect, since sysAP closes Websocket connection after 1 Minute. hell knows why...
