@@ -1,6 +1,6 @@
 {
   "name": "iobroker.bjfreeathome",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "a new adapter for Busch Jaeger supporting API >3.0",
   "author": {
     "name": "Christian Hohmann",
