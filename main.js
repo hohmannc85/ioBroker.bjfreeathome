@@ -194,28 +194,20 @@ async Dataset(datenpunkt,inhalt)
             this.setState("info.connection", true, true);
             this.loadDevices();
             
-            // Start Keep-Alive mit steigender ID
+  // Start Keep-Alive mit steigender ID
             this.keepAliveInterval = setInterval(() => {
             if (this.ws && this.ws.readyState === WebSocket.OPEN) {
                 const keepAliveMessage = JSON.stringify({
                     type: "keepAlive",
                     id: this.keepAliveMessageId++, // Sende steigende ID
                 });
-                this.log.info("KeepAliveMessaeg" + " " + keepAliveMessage);
+                this.log.debug("KeepAliveMessaeg" + " " + keepAliveMessage);
                 this.ws.send(keepAliveMessage);
+                this.ws.ping(); // Schicke Ping-Nachricht
+                this.ws.send("ping"); // Falls der Server ein anderes Protokoll nutzt, passe "ping" an.
                 this.log.debug(`Keep-Alive gesendet: ${keepAliveMessage}`);
                     }
                  }, 30000); // Alle 30 Sekunden
-        
-               this.pingInterval = setInterval(() => {
-                 if (this.ws && this.ws.readyState === WebSocket.OPEN) {
-                     this.ws.send("ping"); // Falls der Server ein anderes Protokoll nutzt, passe "ping" an.
-                     this.log.debug("Ping gesendet");
-                      }
-                   }, 30000); // Alle 30 Sekunden
-
-            
-        });
 
         this.ws.on("error", (data) => {
             this.log.error("WS error:" + data);
