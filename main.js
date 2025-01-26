@@ -208,7 +208,8 @@ async Dataset(datenpunkt,inhalt)
                 this.log.debug(`Keep-Alive gesendet: ${keepAliveMessage}`);
                     }
                  }, 30000); // Alle 30 Sekunden
-
+           });
+       
         this.ws.on("error", (data) => {
             this.log.error("WS error:" + data);
 
