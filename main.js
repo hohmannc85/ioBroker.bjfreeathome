@@ -195,19 +195,13 @@ async Dataset(datenpunkt,inhalt)
             this.loadDevices();
             
   // Start Keep-Alive mit steigender ID
-            this.keepAliveInterval = setInterval(() => {
-            if (this.ws && this.ws.readyState === WebSocket.OPEN) {
-                const keepAliveMessage = JSON.stringify({
-                    type: "keepAlive",
-                    id: this.keepAliveMessageId++, // Sende steigende ID
-                });
-                this.log.debug("KeepAliveMessaeg" + " " + keepAliveMessage);
-                this.ws.send(keepAliveMessage);
-                this.ws.ping(); // Schicke Ping-Nachricht
-                this.ws.send("ping"); // Falls der Server ein anderes Protokoll nutzt, passe "ping" an.
-                this.log.debug(`Keep-Alive gesendet: ${keepAliveMessage}`);
-                    }
-                 }, 30000); // Alle 30 Sekunden
+     this.keepAliveInterval = setInterval(() => {
+           if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+               this.ws.ping(); // Standard-Heartbeat
+               this.log.debug("WebSocket-Ping gesendet.");
+           }
+       }, 20000);
+           
            });
        
         this.ws.on("error", (data) => {
